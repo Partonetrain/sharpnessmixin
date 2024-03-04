@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "sharpnessmixin",
+	"version": "${version}",
+	"name": "sharpnessmixin",
+	"description": "Prevents Sharpness from affecting Attack Damage tooltips",
+	"authors": [
+		"Partonetrain"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sharpnessmixin/icon.png",
+	"environment": "CLIENT",
+	"entrypoints": {
+		"main": [
+			"info.partonetrain.sharpnessmixin.Sharpnessmixin"
+		],
+		"client": [
+			"info.partonetrain.sharpnessmixin.SharpnessmixinClient"
+		]
+	},
+	"mixins": [
+		"sharpnessmixin.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
